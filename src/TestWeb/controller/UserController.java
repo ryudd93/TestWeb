@@ -68,10 +68,10 @@ public class UserController extends HttpServlet {
 			service = new loginServiceImpl();
 			int result = service.execute(request, response);
 			
-			service = new getMyListUserServiceImp();
-			service.execute(request, response);
 			
 			if (result == 1) {
+				service = new getMyListUserServiceImp();
+				service.execute(request, response);
 				request.getRequestDispatcher("user_mypage.jsp").forward(request, response);
 			} else {
 				request.setAttribute("msg", "아이디와 비밀번호를 확인하세요.");
@@ -94,6 +94,8 @@ public class UserController extends HttpServlet {
 			int result = service.execute(request, response);
 			
 			if (result == 1) {
+				service = new getMyListUserServiceImp();
+				service.execute(request, response);
 				request.getRequestDispatcher("user_mypage.jsp").forward(request, response);
 			} else {
 				request.setAttribute("msg", "수정 정보를 확인하세요.");
@@ -109,6 +111,7 @@ public class UserController extends HttpServlet {
 			if (result == 1) {
 				request.getRequestDispatcher("user_login.jsp").forward(request, response);
 			} else {
+				System.out.println("실패");
 				request.setAttribute("msg", "비밀번호를 확인하세요.");
 				request.getRequestDispatcher("user_mypage.jsp").forward(request, response);
 			}

@@ -94,7 +94,7 @@
                             <button type="submit" class="btn btn-lg btn-success btn-block">회원가입</button>
                         </div>
                         <div class="form-group">
-                            <button type="button" class="btn btn-lg btn-info btn-block">로그인</button>
+                            <button type="button" class="btn btn-lg btn-info btn-block" onclick="location.href='login.user'">로그인</button>
                         </div>
                     </form>
                 </div>

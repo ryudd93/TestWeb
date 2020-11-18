@@ -24,7 +24,7 @@
                     <div class="delete-hidden" >
                         <form action="delete.user">
                         <input type="password" class="form-control" name="password" placeholder="비밀번호를 입력하세요">
-                        <button type="button" class="btn btn-primary">확인</button>
+                        <button type="submit" class="btn btn-primary">확인</button>
                         </form>
                     </div>
                     

@@ -1,7 +1,8 @@
 <%@page import="TestWeb.user.model.UserVO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-   
+
+ 
 <%@ include file = "../include/header.jsp" %>
 
 <section>
@@ -28,11 +29,11 @@
                             </tr>
                             <tr>
                                 <td class="m-title">*비밀번호</td>
-                                <td><input class="form-control input-sm" name="password"></td>
+                                <td><input type="password" class="form-control input-sm" name="password"></td>
                             </tr>
                             <tr>
                                 <td class="m-title">*비밀번호확인</td>
-                                <td><input class="form-control input-sm"></td>
+                                <td><input type="password" class="form-control input-sm"></td>
                             </tr>
                             <tr>
                                 <td class="m-title">*E-mail</td>
